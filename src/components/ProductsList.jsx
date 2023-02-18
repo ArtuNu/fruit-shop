@@ -34,9 +34,9 @@ export default function ProductsList({
   };
 
   const images = [
-    "../../public/fruteria.jpg",
-    "../../public/delivery.jpg",
-    "../../public/postres.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/MyFruteria.jpg/799px-MyFruteria.jpg?20230218231355",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/MyDelivery.jpg/799px-MyDelivery.jpg?20230218231356",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Mypostres.jpg/799px-Mypostres.jpg?20230218231355",
   ];
 
   const [selectedIndex, setSelectedIndex] = useState(0);
