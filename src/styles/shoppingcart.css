@@ -1,0 +1,130 @@
+.ShoppingCart{
+    min-height: 500px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.title-container{
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.title-container h1{
+    font-size: 26px;
+    font-weight: 700;
+    user-select: none;
+}
+.total-container{
+    display: flex;
+    flex-direction: column;
+}
+.total-container > button{
+    background-color: rgb(12, 95, 12);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+.total-container > button:hover{
+    background-color: rgb(12, 95, 12,.9);
+}
+
+.shoppingcart-card{
+    margin: 10px 0;
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.product-img-container{
+    width: 20%;
+    max-height: 100px;
+}
+.product-img-container > img{
+    width: 100%;
+    object-fit: contain;
+}
+.shoppingcart-card > h1{
+    font-weight: 700;
+    min-width: 250px;
+}
+.shoppingcart-card > h1::first-letter{
+    text-transform: capitalize;
+}
+.cart-message{
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-message > h1, .cart-message i{
+    color: #a22;
+    font-size: 26px;
+    margin: 0 6px;
+}
+.delete-product{
+    background: transparent;
+    border: none;
+}
+.delete-product > i{
+    font-size: 25px;
+    cursor: pointer;
+}
+.delete-product:hover{
+    color: #a22;
+}
+
+.shopping-quantity-container{
+    position: relative;
+    width: 200px;
+    outline: 1px solid rgb(12, 95, 12, 0.5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.shopping-cart-button,.shopping-cart-button-add,.shopping-cart-button-remove{    
+    height: 30px;
+    color: #fff;
+    background-color: rgb(12, 95, 12);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.shopping-cart-button:hover ,.shopping-cart-button-add:hover ,.shopping-cart-button-remove:hover {
+    background-color: rgb(12, 95, 12,.9);
+}
+.shopping-cart-button-add, .shopping-cart-button-remove{
+    width: 20%;
+}
+
+@media(max-width: 768px){
+    .title-container{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .shoppingcart-card{
+        margin: 10px 0;
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .shoppingcart-card > h1{
+        margin: 5px 0;
+    }
+}
