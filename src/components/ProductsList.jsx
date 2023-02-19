@@ -2,6 +2,7 @@ import "../styles/products.css";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import { productsList } from "../data/products";
+import { Link } from "react-router-dom";
 // import Products from "./Products";
 
 const ProductsImg = styled.img`
@@ -71,7 +72,7 @@ export default function ProductsList({
   const next = () => {
     selectedNewImage(selectedImage, images, false);
   };
-  
+
   return (
     <div className="ProductsList">
       <div className="products-carrousel">
@@ -106,7 +107,14 @@ export default function ProductsList({
           </div>
         ))}
       </div>
-      <a href="#Header" className="btn-up"><i class="fa-solid fa-arrow-up"></i></a>
+      <Link to={"/cart"}>
+        <button className="btn-up btn-cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        </button>
+      </Link>
+      <a href="#Header" className="btn-up">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
     </div>
   );
 }

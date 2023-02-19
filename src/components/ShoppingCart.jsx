@@ -1,4 +1,5 @@
 import "../styles/shoppingcart.css";
+import { Link } from "react-router-dom";
 
 export default function ShoppingCart({
   allProducts,
@@ -141,6 +142,11 @@ export default function ShoppingCart({
           </h1>
         </div>
       )}
+      <Link to={"/"}>
+        <button className="btn-up btn-cart">
+        <i class="fa-solid fa-house"></i>
+        </button>
+      </Link>
       <a href="#Header" className="btn-up">
         <i class="fa-solid fa-arrow-up"></i>
       </a>
