@@ -122,7 +122,7 @@
     align-items: center;
     justify-content: center;
     right: 0;
-    bottom: 0;
+    bottom: 5%;
     background-color: rgb(12, 95, 12);
     width: 60px;
     height: 60px;
@@ -139,7 +139,7 @@
 }
 .btn-cart{
     right: 0;
-    bottom: 10%;
+    bottom: 15%;
 }
 .btn-cart > i{
     font-size: 30px;
@@ -153,26 +153,15 @@
         width: 150%;
     }
     .btn-up{
-        position: fixed;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        right: 0;
-        bottom: 0;
-        background-color: rgb(12, 95, 12);
         width: 40px;
         height: 40px;
-        border-radius: 50%;
-        border: none;
-        color: #fff;
-        cursor: pointer;
     }
     .btn-up > i{
         font-size: 20px;
     }
     .btn-cart{
         right: 0;
-        bottom: 7%;
+        bottom: 12%;
     }
     .btn-cart > i{
         font-size: 20px;
